@@ -45,7 +45,7 @@ def fetchAllAsset():
 def searchAsset(condition):
     expressions = []
     if 'name' in condition:
-        expressions.append(db.assetDB.c.name == condition['name'])
+        expressions.append(db.assetDB.c.name.like("%" + condition['name'] + "%"))
     
     if 'username' in condition:
         expressions.append(db.assetDB.c.username == condition['username'])
