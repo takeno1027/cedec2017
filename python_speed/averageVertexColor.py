@@ -45,7 +45,7 @@ class AverageVertexColor(object):
     
     def traverseAdjacencyListLoop2(self,start):
         """
-        隣接リストの走査 内ループをリスト内包記法
+        隣接リストの走査 内ループをリスト内包表記
         """
         
         accumulate = [[start]]
